@@ -39,7 +39,6 @@ with col1:
 
 with col2:
     if age_unit == "Weeks":
-        # Input for weeks is now an integer
         desired_age_min = st.number_input("Minimum Age (weeks):", min_value=0, step=1)
         desired_age_max = st.number_input("Maximum Age (weeks):", min_value=desired_age_min, step=1)
     else: # Days
@@ -48,9 +47,8 @@ with col2:
 
 if st.button("Calculate Birth Date Range"):
     if age_unit == "Weeks":
-        # Correctly calculate the range for weeks
         min_days = desired_age_min * 7
-        max_days = (desired_age_max * 7) + 6 # Add 6 days to complete the week
+        max_days = (desired_age_max * 7) + 6
     else: # Days
         min_days = desired_age_min
         max_days = desired_age_max
@@ -63,6 +61,8 @@ if st.button("Calculate Birth Date Range"):
 
     res_col1, res_col2 = st.columns(2)
     with res_col1:
-        st.metric("Earliest Date of Birth", earliest_dob.strftime('%B %d, %Y'))
+        # Changed the date format here
+        st.metric("Earliest Date of Birth", earliest_dob.strftime('%Y-%m-%d'))
     with res_col2:
-        st.metric("Latest Date of Birth", latest_dob.strftime('%B %d, %Y'))
+        # And changed the date format here
+        st.metric("Latest Date of Birth", latest_dob.strftime('%Y-%m-%d'))
