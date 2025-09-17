@@ -37,7 +37,7 @@ with col2:
 st.header("2. Input Plasmid Concentrations (ng/μL)")
 col1, col2, col3 = st.columns(3)
 with col1:
-    target_gene_conc = st.number_input("Target Gene (pAAV)", min_value=0.1)
+    target_gene_conc = st.number_input("Target Gene", min_value=0.1)
 with col2:
     helper_conc = st.number_input("Helper", min_value=0.1)
 with col3:
@@ -75,7 +75,7 @@ if st.button("Calculate Volumes", type="primary"):
     total_vol_col_name = f"Total Volume for {num_wells} Well(s) (μL)"
     
     results_data = {
-        "Component": ["Target Gene (pAAV)", "Helper", "Capsid", "2M CaCl₂", "DEPC-treated Water (DW)", "2X HBS", "Culture Volume (ul)", "Final total volume for well (ul)"],
+        "Component": ["Target Gene (pAAV)", "Helper", "Capsid", "2M CaCl₂", "Water (DW)", "2X HBS", "Culture Volume (ul)", "Final total volume for well (ul)"],
         "Volume per Well (μL)": [target_gene_vol, helper_vol, capsid_vol, cacl2_vol_per_well, dw_vol, params["hbs_ul"], params["culture_ul"], final_total_volume],
         f"Total Volume for {num_wells} Well(s) (μL)": [
             target_gene_vol * num_wells,
