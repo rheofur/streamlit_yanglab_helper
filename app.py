@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🔬 Main Page")
+st.title("🔬 Welcome to the In-Lab Calculator!")
 st.sidebar.success("Select a calculator above.")
 
 st.markdown(
