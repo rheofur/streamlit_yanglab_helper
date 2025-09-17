@@ -75,7 +75,7 @@ if st.button("Calculate Volumes", type="primary"):
     total_vol_col_name = f"Total Volume for {num_wells} Well(s) (μL)"
     
     results_data = {
-        "Component": ["Target Gene (pAAV)", "Helper", "Capsid", "2M CaCl₂", "Water (DW)", "2X HBS", "Culture Volume (ul)", "Final total volume for well (ul)"],
+        "Component": ["Target Gene (pAAV)", "Helper", "Capsid", "2M CaCl₂", "Water (DW)", "2X HBS", "Media Volume (ul)", "Final total volume for well (ul)"],
         "Volume per Well (μL)": [target_gene_vol, helper_vol, capsid_vol, cacl2_vol_per_well, dw_vol, params["hbs_ul"], params["culture_ul"], final_total_volume],
         f"Total Volume for {num_wells} Well(s) (μL)": [
             target_gene_vol * num_wells,
