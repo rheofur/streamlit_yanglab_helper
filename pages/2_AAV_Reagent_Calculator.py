@@ -9,13 +9,13 @@ st.markdown("Calculate reagent volumes for AAV production based on a 4:2:1 ratio
 
 # --- Hard-coded values from the lentivirus reference table, including culture volume ---
 PLATE_DATA = {
-    "6 well":    {"total_plasmid_ng": 8160, "cacl2_ul": 25.4, "dna_mix_ul": 100, "hbs_ul": 100, "culture_ul": 2000},
-    "12 well":   {"total_plasmid_ng": 3260, "cacl2_ul": 10.16, "dna_mix_ul": 40,  "hbs_ul": 40,  "culture_ul": 800},
-    "24 well":   {"total_plasmid_ng": 1632, "cacl2_ul": 5.08,  "dna_mix_ul": 20,  "hbs_ul": 20,  "culture_ul": 400},
-    "48 well":   {"total_plasmid_ng": 816, "cacl2_ul": 2.54,  "dna_mix_ul": 10,  "hbs_ul": 10,  "culture_ul": 200},
-    "96 well":   {"total_plasmid_ng": 408,  "cacl2_ul": 1.27,  "dna_mix_ul": 5,   "hbs_ul": 5,   "culture_ul": 100},
-    "100mm dish":{"total_plasmid_ng": 40800,"cacl2_ul": 127,   "dna_mix_ul": 500, "hbs_ul": 500, "culture_ul": 10000},
-    "150mm dish":{"total_plasmid_ng": 73440,"cacl2_ul": 229,   "dna_mix_ul": 900, "hbs_ul": 900, "culture_ul": 20000}
+    "6 well":    {"total_plasmid_ng": 8160, "cacl2_ul": 25.4, "dna_mix_ul": 100, "hbs_ul": 100, "culture_ul": 1800},
+    "12 well":   {"total_plasmid_ng": 3260, "cacl2_ul": 10.16, "dna_mix_ul": 40,  "hbs_ul": 40,  "culture_ul": 720},
+    "24 well":   {"total_plasmid_ng": 1632, "cacl2_ul": 5.08,  "dna_mix_ul": 20,  "hbs_ul": 20,  "culture_ul": 360},
+    "48 well":   {"total_plasmid_ng": 816, "cacl2_ul": 2.54,  "dna_mix_ul": 10,  "hbs_ul": 10,  "culture_ul": 180},
+    "96 well":   {"total_plasmid_ng": 408,  "cacl2_ul": 1.27,  "dna_mix_ul": 5,   "hbs_ul": 5,   "culture_ul": 90},
+    "100mm dish":{"total_plasmid_ng": 40800,"cacl2_ul": 127,   "dna_mix_ul": 500, "hbs_ul": 500, "culture_ul": 9000},
+    "150mm dish":{"total_plasmid_ng": 73440,"cacl2_ul": 229,   "dna_mix_ul": 900, "hbs_ul": 900, "culture_ul": 18000}
 }
 
 # --- Main Page Inputs ---
