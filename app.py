@@ -7,4 +7,4 @@ st.set_page_config(
 )
 
 # This command automatically navigates to your desired main page
-st.switch_page("pages/Main.py")
+st.switch_page("pages/1_Main.py")
