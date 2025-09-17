@@ -15,10 +15,5 @@ st.markdown(
     This is an interactive web app designed to host various calculators for common lab tasks.
 
     **👈 Select a calculator from the sidebar** to get started!
-
-    ### Want to add a new calculator?
-    - Create a new Python file in the `pages/` directory.
-    - The filename will be used as the page title (e.g., `3_My_New_Calculator.py`).
-    - Write your Streamlit code in the new file!
     """
 )
