@@ -72,7 +72,8 @@ if st.button("Calculate Volumes", type="primary"):
     st.info(f"Calculations for **{num_wells}** well(s) of a **{plate_format}** plate.")
 
     final_total_volume = params["culture_ul"] + params["hbs_ul"] + dna_mix_vol
-
+    total_vol_col_name = f"Total Volume for {num_wells} Well(s) (μL)"
+    
     results_data = {
         "Component": ["Target Gene (pAAV)", "Helper", "Capsid", "2M CaCl₂", "DEPC-treated Water (DW)", "2X HBS", "Culture Volume (ul)", "Final total volume for well (ul)"],
         "Volume per Well (μL)": [target_gene_vol, helper_vol, capsid_vol, cacl2_vol_per_well, dw_vol, params["hbs_ul"], params["culture_ul"], final_total_volume],
