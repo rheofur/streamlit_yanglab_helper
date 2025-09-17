@@ -90,7 +90,10 @@ if st.button("Calculate Volumes", type="primary"):
     results_df = pd.DataFrame(results_data)
 
     st.dataframe(
-        results_df.style.format("{:.1f}").hide(axis="index"),
+        results_df.style.format({
+            "Volume per Well (μL)": "{:.1f}",
+            total_vol_col_name: "{:.1f}"
+        }).hide(axis="index"),
         use_container_width=True
     )
 
